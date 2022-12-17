@@ -9,64 +9,66 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
-  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/styles.css" rel="stylesheet">
 </head>
 <body>
   <!--Header website and navigation-->
   <header>
-    <nav>
-      <a href="#"><span>web</span>studio</a>
-      <ul>
-        <li><a href="#">agencja</a></li>
-        <li><a href="portfolio.html">portfolio</a></li>
-        <li><a href="#">kontakt</a></li>
+    <div class="container">
+      <nav class="menu-block">
+        <a class="logo" href="#"><span class="logo__primary-part">web</span>Studio</a>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#">agencja</a></li>
+          <li class="menu__item"><a class="menu__link" href="portfolio.html">portfolio</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">kontakt</a></li>
+        </ul>
+      </nav>
+      <ul class="contact">
+        <li class="contact__item"><a class="contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li class="contact__item"><a class="contact__link" href="tel:+48111111111">+48 111 111 111</a></li>
       </ul>
-    </nav>
-    <ul>
-      <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-      <li><a href="tel:+48111111111">+48 111 111 111</a></li>
-    </ul>
-    <div>
-      <h1>efektywne rozwiązania dla waszego biznesu</h1>
-      <button type="button">zamów usługę</button>
+    </div>
+    <div class="heading">
+      <h1 class="heading__main">efektywne rozwiązania<br> dla waszego biznesu</h1>
+      <button class="button" type="button">zamów usługę</button>
     </div>
   </header>
   <!--Main website content-->
   <main>
     <!--Our strengths-->
     <section>
-      <div>
-        <ul>
-          <li>
-            <h3>lorem Ipsum</h3>
-            <p>
+      <div class="container">
+        <ul class="list-block">
+          <li class="list-block__item">
+            <h3 class="list-block__heading">lorem Ipsum</h3>
+            <p class="list-block__paragraph">
               lorem ipsum dolor sit amet consectetur adipisicing elit. amet
               impedit natus et mollitia quod, quidem exercitationem fuga alias
               quia, itaque adipisci facilis a reprehenderit doloremque
               incidunt soluta, perferendis nisi consequatur.
             </p>
           </li>
-          <li>
-            <h3>lorem Ipsum</h3>
-            <p>
+          <li class="list-block__item">
+            <h3 class="list-block__heading">lorem Ipsum</h3>
+            <p class="list-block__paragraph">
               lorem ipsum dolor sit amet consectetur adipisicing elit. amet
               impedit natus et mollitia quod, quidem exercitationem fuga alias
               quia, itaque adipisci facilis a reprehenderit doloremque
               incidunt soluta, perferendis nisi consequatur.
             </p>
           </li>
-          <li>
-            <h3>lorem Ipsum</h3>
-            <p>
+          <li class="list-block__item">
+            <h3 class="list-block__heading">lorem Ipsum</h3>
+            <p class="list-block__paragraph">
               lorem ipsum dolor sit amet consectetur adipisicing elit. amet
               impedit natus et mollitia quod, quidem exercitationem fuga alias
               quia, itaque adipisci facilis a reprehenderit doloremque
               incidunt soluta, perferendis nisi consequatur.
-            </p>
+            </p class="list-block__paragraph">
           </li>
-          <li>
-            <h3>lorem Ipsum</h3>
-            <p>
+          <li class="list-block__item">
+            <h3 class="list-block__heading">lorem Ipsum</h3>
+            <p class="list-block__paragraph">
               lorem ipsum dolor sit amet consectetur adipisicing elit. amet
               impedit natus et mollitia quod, quidem exercitationem fuga alias
               quia, itaque adipisci facilis a reprehenderit doloremque
@@ -78,67 +80,65 @@
     </section>
     <!--Section what we do-->
     <section>
-      <div>
-        <h2>czym się zajmujemy</h2>
-        <div>
-          <ul>
-            <li>
-              <img src="images/ours-designs-are-create-in-HTML-5.jpg" alt="website coding" width="370" height="294">
-            </li>
-            <li>
-              <img src="images/websites-are-designed-with-in-mind-about-mobile.jpg" alt="projects for mobile"
-                width="370" height="294">
-            </li>
-            <li>
-              <img src="images/palet-of-colors.jpg" alt="colors" width="370" height="294">
-            </li>
-          </ul>
-        </div>
+      <div class="container">
+        <h2 class="secondary-heading">czym się zajmujemy</h2>
+        <ul class="photos-work">
+          <li class="photos-work__item">
+            <img src="images/ours-designs-are-create-in-HTML-5.jpg" alt="website coding" width="370" height="294">
+          </li>
+          <li class="photos-work__item">
+            <img src="images/websites-are-designed-with-in-mind-about-mobile.jpg" alt="projects for mobile" width="370"
+              height="294">
+          </li>
+          <li class="photos-work__item">
+            <img src="images/palet-of-colors.jpg" alt="colors" width="370" height="294">
+          </li>
+        </ul>
       </div>
     </section>
     <!--Our team-->
-    <section>
-      <div>
-        <h2>nasz zespół</h2>
-        <div>
-          <ul>
-            <li>
-              <img src="images/john-doe-memeber-of-our-team-1.jpg" alt="our employee John Doe" width="270" height="260">
-              <h3>john doe</h3>
-              <p>product designer</p>
-            </li>
-            <li>
-              <img src="images/john-doe-memeber-of-our-team-2.jpg" alt="our employee John Doe" width="270" height="260">
-              <h3>john doe</h3>
-              <p>frondend developer</p>
-            </li>
-            <li>
-              <img src="images/john-doe-memeber-of-our-team-3.jpg" alt="our employee John Doe" width="270" height="260">
-              <h3>john doe</h3>
-              <p>marketing</p>
-            </li>
-            <li>
-              <img src="images/john-doe-memeber-of-our-team-4.jpg" alt="our employee John Doe" width="270" height="260">
-              <h3>john doe</h3>
-              <p>ui designer</p>
-            </li>
-          </ul>
-        </div>
+    <section class="team-bg">
+      <div class="container">
+        <h2 class="secondary-heading">nasz zespół</h2>
+        <ul class="photo-team">
+          <li class="photo-team__item">
+            <img src="images/john-doe-memeber-of-our-team-1.jpg" alt="our employee John Doe" width="270" height="260">
+            <h3 class="photo-team__heading">john doe</h3>
+            <p class="photo-team__paragraph">product designer</p>
+          </li>
+          <li class="photo-team__item">
+            <img src="images/john-doe-memeber-of-our-team-2.jpg" alt="our employee John Doe" width="270" height="260">
+            <h3 class="photo-team__heading">john doe</h3>
+            <p class="photo-team__paragraph">frondend developer</p>
+          </li>
+          <li class="photo-team__item">
+            <img src="images/john-doe-memeber-of-our-team-3.jpg" alt="our employee John Doe" width="270" height="260">
+            <h3 class="photo-team__heading">john doe</h3>
+            <p class="photo-team__paragraph">marketing</p>
+          </li>
+          <li class="photo-team__item">
+            <img src="images/john-doe-memeber-of-our-team-4.jpg" alt="our employee John Doe" width="270" height="260">
+            <h3 class="photo-team__heading">john doe</h3>
+            <p class="photo-team__paragraph">ui designer</p>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
   <!--Website footer-->
-  <footer>
-    <a href="#"><span>web</span>studio</a>
+  <footer class="footer">
+    <a class="logo-footer logo" href="#"><span class="logo__primary-part">web</span>Studio</a>
     <address>
-      <ul>
-        <li>
-          <a href="https://goo.gl/maps/kYdDBKaU15SzFSr7A" target="_blank">
-            m. warszawa, aleje jerozolimskie 21
+      <ul class="contact__footer contact">
+        <li class="contact__footer-item contact__item">
+          <a class="contact__link-footer contact__link" href="https://goo.gl/maps/kYdDBKaU15SzFSr7A" target="_blank">
+            m. <span class="address">warszawa, aleje jerozolimskie</span> 21
           </a>
         </li>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+        <li class="contact__footer-item contact__item"><a class="contact__link"
+            href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li class="contact__footer-item contact__item"><a class="contact__link" href="tel:+48111111111">+48 111 111
+            111</a></li>
       </ul>
     </address>
   </footer>
