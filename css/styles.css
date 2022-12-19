@@ -88,12 +88,12 @@ body {
   font-size: 16px;
   line-height: 1.87;
 }
-.heading__button::first-letter {
+.headline__button::first-letter {
   text-transform: uppercase;
 }
 
-.heading__button:hover,
-.heading__button:focus {
+.headline__button:hover,
+.headline__button:focus {
   cursor: pointer;
 }
 /*our advantages section*/
@@ -185,7 +185,7 @@ body {
   color: var(--color-third);
 }
 
-.location {
+.footer__location {
   text-transform: capitalize;
 }
 
