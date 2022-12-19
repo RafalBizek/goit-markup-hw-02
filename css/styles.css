@@ -7,23 +7,25 @@
   --bg-header: #2f303a;
   --bg-our-team: #f5f4fa; /*color for section our team and buttons in portfolio*/
   --bg-footer: #2f303a;
-  --border-project-color: #eeeeee;
+  /*--border-project-color: #eeeeee;*/
   --primary-fonts: "Roboto", sans-serif;
   --logo-fonts: "Raleway", sans-serif;
 }
 body {
   font-family: var(--primary-fonts);
   color: var(--color-third);
+  letter-spacing: 0.03em;
+  font-size: 14px;
 }
-/*main menu and contact in header and contact in footer*/
-.header__menu-item,
+/*main menu and contact in header*/
 .header__menu-link,
-.header__contact-item,
 .header__contact-link,
-.footer__contact-link,
-.header__logo,
-.footer__logo {
+.header__logo {
   text-decoration: none;
+}
+
+.header__menu-item,
+.header__contact-item {
   list-style: none;
 }
 
@@ -42,7 +44,6 @@ body {
 }
 
 .header__menu-link {
-  font-size: 14px;
   font-weight: 500;
   line-height: 1.17;
   color: var(--color-second);
@@ -52,26 +53,23 @@ body {
 .header__menu-link:hover,
 .header__menu-link:focus,
 .header__contact-link:hover,
-.header__contact-link:focus,
-.footer__contact-item .footer__contact-link:hover,
-.footer__contact-item .footer__contact-link:focus {
+.header__contact-link:focus {
   color: var(--color-four);
 }
 
 .header__contact-link {
-  font-size: 14px;
   font-weight: 500;
   line-height: 1.17;
   color: var(--color-third);
 }
 
 /*heading and button w section header*/
-.heading {
+.headline {
   text-align: center;
   background-color: var(--bg-header);
 }
 
-.heading__main {
+.headline__main-headline {
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
@@ -80,7 +78,7 @@ body {
   color: var(--color-first);
 }
 
-.heading__button {
+.headline__button {
   width: 200px;
   height: 50px;
   border: none;
@@ -95,55 +93,65 @@ body {
   text-transform: uppercase;
 }
 
-.heading__button:hover {
+.heading__button:hover,
+.heading__button:focus {
   cursor: pointer;
 }
-/*our strengths section*/
-.list-block__item,
-.photos-work__item,
+/*our advantages section*/
+.advantages__item,
 .team__card-item {
   list-style: none;
 }
 
-.list-block__heading {
+.advantages__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   color: var(--color-second);
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
-.list-block__paragraph {
-  font-size: 14px;
+.advantages__text {
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
-
-.secondary-heading,
-.team__secondary-heading {
+/*what we do section*/
+.what-we-do__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--color-second);
 }
 
-.secondary-heading::first-letter,
-.team__secondary-heading::first-letter {
+.what-we-do__title::first-letter {
   text-transform: uppercase;
+}
+
+.what-we-do__card {
+  list-style: none;
 }
 
 /*our team section*/
 .team {
   background-color: var(--bg-our-team);
 }
+
+.team__main-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--color-second);
+}
+
+.team__main-title::first-letter {
+  text-transform: uppercase;
+}
+
 .team__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  letter-spacing: 0.03em;
   text-transform: capitalize;
   color: var(--color-second);
 }
@@ -151,13 +159,17 @@ body {
 .team__subtitle {
   font-size: 16px;
   line-height: 1.18;
-  letter-spacing: 0.03em;
   text-transform: capitalize;
   color: var(--color-third);
 }
 /*footer*/
 .footer {
   background-color: var(--bg-footer);
+}
+
+.footer__contact-link,
+.footer__logo {
+  text-decoration: none;
 }
 
 .footer__logo,
@@ -169,14 +181,18 @@ body {
 .footer__contact-link,
 .footer__contact-item {
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   list-style: none;
   color: var(--color-third);
 }
+
 .location {
   text-transform: capitalize;
+}
+
+.footer__contact-item .footer__contact-link:hover,
+.footer__contact-item .footer__contact-link:focus {
+  color: var(--color-four);
 }
 
 /*portfolio.html*/
@@ -206,8 +222,10 @@ body {
   background-color: var(--color-four);
   cursor: pointer;
 }
+
 /*cards of projects*/
 .card__img {
+  --border-project-color: #eeeeee;
   border: 1px solid var(--border-project-color);
 }
 .card__title {
@@ -215,7 +233,6 @@ body {
   font-weight: 700;
   line-height: 2;
   color: var(--color-second);
-
   letter-spacing: 0.06em;
 }
 
