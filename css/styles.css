@@ -28,8 +28,7 @@ body {
   list-style: none;
 }
 
-.header__logo,
-.footer__logo {
+.header__logo {
   font-family: var(--logo-fonts);
   font-size: 26px;
   font-weight: 700;
@@ -97,8 +96,7 @@ body {
   cursor: pointer;
 }
 /*our advantages section*/
-.advantages__item,
-.team__card-item {
+.advantages__item {
   list-style: none;
 }
 
@@ -135,6 +133,10 @@ body {
   background-color: var(--bg-our-team);
 }
 
+.team__card-item {
+  list-style: none;
+}
+
 .team__main-title {
   font-weight: 700;
   font-size: 36px;
@@ -169,6 +171,14 @@ body {
 .footer__contact-link,
 .footer__logo {
   text-decoration: none;
+}
+
+.footer__logo {
+  font-family: var(--logo-fonts);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.38;
+  color: var(--logo-basic-color);
 }
 
 .footer__logo,
